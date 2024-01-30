@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+/* header */
+.main-header {
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    background-color: #2DDF5C;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%; /*must adding this, fixed default width is inline-block(content width)*/
+    height: 5rem;
+}
+.main-header__brand {
+    display: inline-block;
+}
+.main-header__brand img {
+    width: 2rem;
+    height: 2rem;
+}
+.main-nav {
+    margin-left: auto;
+}
+.main-nav__items {
+    padding: 0;
+    list-style: none;
+}
+.main-nav__item {
+    display: inline-block;
+    padding: 0 1rem;
+}
+.main-nav__item a {
+    text-decoration: none;
+    line-height: 2rem;
+    color: #0E4F1F;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.main-nav__item.host a {
+    background: #FF1B68;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 4px solid white;
+}
+.main-nav__item.host a:hover,
+.main-nav__item.host a:active {
+    background: white;
+    color: #FF1B68;
+    border: none;
+}
+
+/* footer */
+.main-footer {
+    background: #000000;
+}
+.footer-items {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer-item {
+    padding: 3rem;
+}
+.footer-item a{
+    text-decoration: none;
+    color: white;
+}

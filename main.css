@@ -1,0 +1,115 @@
+/* product */
+.product {
+    margin-top: 5rem;
+    background:linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("images/freedom.jpg") center top 20%/cover no-repeat border-box,
+    #ff1b68;
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+}
+.section-title {
+    padding: 1rem;
+    color: #2DDF5C;
+}
+.product > h1 {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    font-size: 2rem;
+    color: white;
+    font-family: "Anton", sans-serif;
+}
+/* plan */
+.plans {
+    text-align: center;
+}
+.plans__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #D4FFDC;
+    height: 28rem;
+    width: 30%;
+    font-size: 0.85rem;
+}
+.plan.highlighted {
+    background-color: #17B94D;
+}
+.plan > h1,
+.plan > ul,
+.plan > div {
+    padding: 0.5rem;
+}
+.plan-features {
+    list-style-type: none;
+}
+.plan-features .plan-feature {
+    padding: 0.25rem;
+}
+.plan-price {
+    color: #858585;
+}
+.plan.highlighted {
+    transform: scale(1.025);
+}
+.plan.highlighted .plan-price {
+    color: white;
+}
+.plan.highlighted .plan-annotation {
+    color: #17B94D;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.button {
+    background: #0E4F1F;
+    border: 1px solid #0E4F1F;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* key-feature */
+section.key-features {
+    background: #FF1B68;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+.key-features .section-title {
+    color: white;
+    margin: 2rem;
+    text-align: center;
+}
+.key-feature__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.key-feature {
+    width: 30%;
+}
+.key-feature__image {
+    width: 128px;
+    height: 128px;
+    background: #FECEDE;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin: auto;
+}
+.key-feature__description {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,63 @@
+main {
+    margin-top: 5rem;
+}
+.persons {
+    padding: 0.5rem;
+}
+.person {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.person__image-container {
+    width: 66%;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.5);
+    max-width: 40rem;
+    transform: skew(10deg);
+}
+#customer-1:hover .person__image-container {
+    animation: flip-customer 1s ease-out forwards;
+}
+@keyframes flip-customer {
+    0% {
+      transform: rotateY(0) skew(10deg);
+    }
+    50% {
+      transform: rotateY(160deg) skew(10deg);
+    }
+    100% {
+      transform: rotateY(360deg) skew(10deg);
+    }
+  }
+
+.person__image {
+    width: 100%;
+    vertical-align: bottom;
+}
+.info {
+    padding: 1rem;
+    width: 30%;
+    margin: auto;
+    font-size: 1.25rem;
+    font-style:italic;
+}
+#customer-1 .info{
+    text-align: right;
+}
+
+#customer-2 .info{
+    text-align: left;
+    order: 0;
+}
+.person__title {
+    color: #FF5454;
+    padding: 0.5rem;
+} 
+.person__subtitle {
+    color: #CCCCCC;
+    padding: 0.5rem;
+}
+
+#customer-2 .person__image-container {
+    order: 1;
+}
