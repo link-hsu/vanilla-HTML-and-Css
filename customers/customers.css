@@ -5,16 +5,14 @@ main {
     padding: 0.5rem;
 }
 .person {
-    display: flex;
-    justify-content: center;
     margin: 2rem;
 }
 .person__image-container {
-    width: 66%;
     box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.5);
     max-width: 40rem;
     transform: skew(10deg);
 }
+
 #customer-1:hover .person__image-container {
     animation: flip-customer 1s ease-out forwards;
 }
@@ -36,7 +34,6 @@ main {
 }
 .info {
     padding: 1rem;
-    width: 30%;
     margin: auto;
     font-size: 1.25rem;
     font-style:italic;
@@ -60,4 +57,26 @@ main {
 
 #customer-2 .person__image-container {
     order: 1;
+}
+
+@media (min-width: 930px) {
+    .person {
+        display: flex;
+        justify-content: center;
+    }
+    .person__image-container {
+        width: 50%;
+    }
+    .info {
+        width: 46%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .person__image-container {
+        width: 66%;
+    }
+    .info {
+        width: 30%;
+    }
 }

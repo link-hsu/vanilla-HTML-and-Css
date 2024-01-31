@@ -24,10 +24,16 @@
 .plans {
     text-align: center;
 }
-.plans__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media (min-width: 500px) {
+    .plans__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan {
+        width: 30%;
+    }
 }
 .plan {
     display: flex;
@@ -36,7 +42,6 @@
     justify-content: center;
     background-color: #D4FFDC;
     height: 28rem;
-    width: 30%;
     font-size: 0.85rem;
 }
 .plan.highlighted {
@@ -90,13 +95,22 @@ section.key-features {
     text-align: center;
 }
 .key-feature__list {
-    display: flex;
-    justify-content: center;
     list-style-type: none;
 }
 .key-feature {
-    width: 30%;
+    margin-top: 2rem;
 }
+@media (min-width: 500px) {
+    .key-feature__list {
+        display: flex;
+        justify-content: center;
+    }
+    .key-feature {
+        width: 30%;
+        margin-top: 0rem;
+    }
+}
+
 .key-feature__image {
     width: 128px;
     height: 128px;
